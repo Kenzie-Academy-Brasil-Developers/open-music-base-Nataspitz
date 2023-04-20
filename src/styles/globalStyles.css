@@ -7,21 +7,57 @@
 }
 
 :root {
-  --color-brand-1:#9747ff;
-  --color-grey-0: #15171a;
-  --color-grey-1: #212529;
-  --color-grey-2: #2b2f33;
-  --color-grey-3: #868e96;
-  --color-grey-4: #adb5bd;
-  --color-grey-5: #ced4da;
-  --color-grey-6: #dee2e6;
-  --color-grey-7: #f1f3f5;
-  --color-grey-8: #f8f9fa;
-  --color-grey-9: #fdfeff;
+  --background: #ffffff;
+  --color-titles: #212529;
+  --color-titles-sec: #212529;
+  --color-button-mode: #F8F9FA;
+  --color-main-texts: #212529;
+  --border: #ffffff;
+  --color-textFilter: #2B2F33;
+  --color-textFilter-hover: #F8F9FA;
+  --color-buttonsFilter: #F8F9FA;
+  --color-hoverFilter: #2B2F33;;
+  --color-sec-texts: #2b2f33;
+  --color-thermometer:#9747ff;
+  --color-backgroundThermometer: #ced4da;
+  --color-background-card: #F8F9FA;
+  --color-cards-hover: #DEE2E6;
+  --color-buyDefault: #F1F3F5;
+  --color-buy-active: #F1F3F5;
+  --color-buyText: #2B2F33;
+  --color-buttonsMode: #f8f9fa;
 
   --color-disable-fixed: #212529;
   --color-actived-fixed: #2b2f33;
-  --color-white-fixed: #ffffff;
+
+  --font-1: 1.75rem;
+  --font-2: 1rem;
+  --font-3: 0.875rem;
+
+  --radius-1: 0.25rem;
+  --container: 45rem;
+}
+
+.darkMode:root{
+  --background: #15171A;
+  --color-titles:  #ADB5BD;
+  --color-titles-sec: #F8F9FA;
+  --color-button-mode: #212529;
+  --color-main-texts: #F8F9FA;
+  --border: #FDFEFF;
+  --color-textFilter: #868E96;
+  --color-hoverFilter: #2B2F33;
+  --color-buttonsFilter: #212529;
+  --color-textFilter-hover: #FDFEFF;
+  --color-sec-texts: #868E96;
+  --color-thermometer:#9747ff;
+  --color-backgroundThermometer: #212529;
+  --color-background-card: #212529;
+  --color-cards-hover: #2B2F33;
+  --color-buyDefault: #2B2F33;
+  --color-buy-active: #2B2F33;
+  --color-buyText: #ced4da;
+  --color-buttonsMode: #212529;
 
   --font-1: 1.75rem;
   --font-2: 1rem;
@@ -35,12 +71,40 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-grey-9);
+  background-color: var(--background);
 }
 
-.container {
-  width: var(--container);
-  max-width: 100%;
-  padding: 0 1rem;
-  margin: 0 auto;
+main{
+  margin: 0% 5%;
+}
+
+h1{
+  font-size: var(--font-1);
+  font-weight: 600;
+  color: var(--color-main-texts);
+}
+
+h2{
+  font-size: var(--font-2);
+  font-weight: 600;
+  color: var(--color-titles);
+}
+
+h3{
+  font-size: var(--font-2);
+  font-weight: 600;
+  color: var(--color-titles);
+}
+
+
+label{
+  font-size: var(--font-2);
+  font-weight: 500;
+  color: var(--color-titles);
+}
+
+span{
+  font-size: var(--font-3);
+  font-weight: 500;
+  color: var(--color-sec-texts);
 }
